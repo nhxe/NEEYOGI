@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Agricultural warm palette */
+    --background: 40 30% 97%;
+    --foreground: 30 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 20% 20%;
+
+    /* Earth green - primary agricultural color */
+    --primary: 120 40% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm golden yellow */
+    --secondary: 45 85% 65%;
+    --secondary-foreground: 30 25% 15%;
+
+    /* Soft beige muted tones */
+    --muted: 40 25% 90%;
+    --muted-foreground: 30 15% 45%;
+
+    /* Fresh lime green accent */
+    --accent: 85 60% 55%;
+    --accent-foreground: 30 25% 15%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 20% 85%;
+    --input: 40 20% 88%;
+    --ring: 120 40% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradient colors for hero sections */
+    --gradient-start: 120 45% 48%;
+    --gradient-end: 85 55% 52%;
+    
+    /* Success/Growth green */
+    --success: 140 60% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - market caution */
+    --warning: 35 90% 60%;
+    --warning-foreground: 30 25% 15%;
+
+    --sidebar-background: 40 30% 97%;
+    --sidebar-foreground: 30 20% 30%;
+    --sidebar-primary: 120 40% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 25% 90%;
+    --sidebar-accent-foreground: 30 20% 30%;
+    --sidebar-border: 40 20% 85%;
+    --sidebar-ring: 120 40% 45%;
+  }
+
+  .dark {
+    --background: 120 15% 12%;
+    --foreground: 40 25% 92%;
+
+    --card: 120 12% 15%;
+    --card-foreground: 40 25% 92%;
+
+    --popover: 120 12% 15%;
+    --popover-foreground: 40 25% 92%;
+
+    --primary: 120 45% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 80% 60%;
+    --secondary-foreground: 30 25% 15%;
+
+    --muted: 120 10% 20%;
+    --muted-foreground: 40 20% 65%;
+
+    --accent: 85 55% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 120 10% 25%;
+    --input: 120 10% 25%;
+    --ring: 120 45% 50%;
+
+    --success: 140 55% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 35 85% 55%;
+    --warning-foreground: 30 25% 15%;
+
+    --sidebar-background: 120 15% 12%;
+    --sidebar-foreground: 40 25% 85%;
+    --sidebar-primary: 120 45% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 120 10% 20%;
+    --sidebar-accent-foreground: 40 25% 85%;
+    --sidebar-border: 120 10% 25%;
+    --sidebar-ring: 120 45% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
